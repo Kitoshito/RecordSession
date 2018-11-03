@@ -31,4 +31,7 @@
     <string name="player_inquiry">プレイ済みPL照会</string>
     <string name="configuration">設定</string>
 
+
+    <string name="test">Gitのテスト用</string>
+
 </resources>
