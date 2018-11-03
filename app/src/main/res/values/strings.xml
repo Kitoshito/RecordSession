@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">セッション記録アプリ</string>
+    <string name="my_page">MyPage</string>
+    <string-array name="ddl_systemName">
+        <item>--システム名--</item>
+        <item>アリアンロッド</item>
+        <item>アリアンロッドR2</item>
+        <item>アルシャード ガイア</item>
+        <item>アルシャードセイヴァーRPG</item>
+        <item>VS騎士ラムネ&amp;40炎RPG</item>
+    </string-array>
+    <string name="display_title">セッション登録画面</string>
+    <string name="hint_datetime">右のダイアログから選択</string>
+    <string name="dialog">・・・</string>
+    <string name="label_system_name">システム名</string>
+    <string name="label_scenario_name">シナリオ名</string>
+    <string name="label_comment">概要・コメント</string>
+    <string name="label_datetime">開催日時</string>
+    <string name="label_gm_name">GM名</string>
+    <string name="label_pl_name1">プレイヤー名1</string>
+    <string name="label_pl_name2">プレイヤー名2</string>
+    <string name="label_pl_name3">プレイヤー名3</string>
+    <string name="label_pl_name4">プレイヤー名4</string>
+    <string name="label_pl_name5">プレイヤー名5</string>
+    <string name="label_pl_name6">プレイヤー名6</string>
+    <string name="label_pl_name7">プレイヤー名7</string>
+    <string name="label_pl_name8">プレイヤー名8</string>
+    <string name="title_activity_my_page">MyPageActivity</string>
+    <string name="session_register">セッション登録</string>
+    <string name="session_inquiry">セッション照会</string>
+    <string name="player_inquiry">プレイ済みPL照会</string>
+    <string name="configuration">設定</string>
+
+</resources>
