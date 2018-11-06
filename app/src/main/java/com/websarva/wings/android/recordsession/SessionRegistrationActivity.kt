@@ -1,9 +1,13 @@
 package com.websarva.wings.android.recordsession
 
 import android.app.DatePickerDialog
+import android.app.Dialog
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.support.v4.app.DialogFragment
 import android.view.View
+import android.widget.Button
+import android.widget.DatePicker
 import android.widget.EditText
 import android.widget.TextView
 import kotlinx.android.synthetic.main.activity_session_registration.*
@@ -18,36 +22,29 @@ class SessionRegistrationActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_session_registration)
 
-        bt_return.setOnClickListener{
-            finish()
+        val textView = findViewById(R.id.tw_start_time) as TextView
+        textView.setOnClickListener {
+
+            val datePicker = DatePickerDialogFragment()
+            datePicker.show(supportFragmentManager, "datePicker")
         }
     }
 }
-/*
-class SessionRegistrationActivity : AppCompatActivity() {
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_session_registration)
-        val textView: TextView = findViewById(R.id.textView_date)
-        textView.text = SimpleDateFormat("dd.MM.yyyy").format(System.currentTimeMillis())
-        var cal = Calendar.getInstance()
-        val dateSetListener = DatePickerDialog.OnDateSetListener {
-            view, year, monthOfYear, dayOfMonth
-        } -> cal.set(Calendar.YEAR, year) cal.set(Calendar.MONTH, monthOfYear)
-        cal.set(Calendar.DAY_OF_MONTH, dayOfMonth)
-        val myFormat = "dd.MM.yyyy"
 
-        // mention the format you need
-        val sdf = SimpleDateFormat(myFormat, Locale.US)
-        textView.text = sdf.format(cal.time) }
-        textView.setOnClickListener {
-            DatePickerDialog(this@MainActivity
-                    , dateSetListener
-                    , cal.get(Calendar.YEAR)
-                    , cal.get(Calendar.MONTH)
-                    , cal.get(Calendar.DAY_OF_MONTH)
-            ).show()
+class DatePickerDialogFragment : DialogFragment(), DatePickerDialog.OnDateSetListener {
+
+    override fun onCreateDialog(savedInstanceState: Bundle?): Dialog {
+        val calendar = Calendar.getInstance()
+        val yearget = calendar.get(Calendar.YEAR)
+        val monthget = calendar.get(Calendar.MONTH)
+        val dayget = calendar.get(Calendar.DAY_OF_MONTH)
+
+        return DatePickerDialog(activity, this, yearget, monthget, dayget)
+    }
+
+    override fun onDateSet(view: DatePicker, year: Int, month: Int, day: Int) {
+
+        val textView = activity!!.findViewById(R.id.tw_start_time) as TextView
+        textView.text = year.toString()+ "年" + month.toString() + "月" + day.toString() + "日"
     }
 }
-}
-*/

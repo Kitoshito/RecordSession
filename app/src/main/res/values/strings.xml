@@ -10,8 +10,7 @@
         <item>VS騎士ラムネ&amp;40炎RPG</item>
     </string-array>
     <string name="display_title">セッション登録画面</string>
-    <string name="hint_datetime">右のダイアログから選択</string>
-    <string name="dialog">・・・</string>
+    <string name="hint_datetime">日付の選択</string>
     <string name="label_system_name">システム名</string>
     <string name="label_scenario_name">シナリオ名</string>
     <string name="label_comment">概要・コメント</string>
