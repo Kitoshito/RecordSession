@@ -22,6 +22,12 @@ class SessionRegistrationActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_session_registration)
 
+        //画面を閉じてTOP画面に戻る
+        bt_return.setOnClickListener{
+            finish()
+        }
+
+        //日付ダイアログの表示
         val textView = findViewById(R.id.tw_start_time) as TextView
         textView.setOnClickListener {
 
