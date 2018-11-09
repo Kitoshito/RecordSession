@@ -14,7 +14,9 @@ import kotlinx.android.synthetic.main.activity_session_registration.*
 import java.text.SimpleDateFormat
 import java.util.*
 
-
+/**
+ * スタートアップオブジェクト
+ */
 class SessionRegistrationActivity : AppCompatActivity() {
 
 
@@ -37,15 +39,18 @@ class SessionRegistrationActivity : AppCompatActivity() {
     }
 }
 
+/**
+ * 日付ダイアログを表示して、ユーザが選択した値をTextViewにストアする。
+ */
 class DatePickerDialogFragment : DialogFragment(), DatePickerDialog.OnDateSetListener {
 
     override fun onCreateDialog(savedInstanceState: Bundle?): Dialog {
         val calendar = Calendar.getInstance()
-        val yearget = calendar.get(Calendar.YEAR)
-        val monthget = calendar.get(Calendar.MONTH)
-        val dayget = calendar.get(Calendar.DAY_OF_MONTH)
+        val yearGet = calendar.get(Calendar.YEAR)
+        val monthGet = calendar.get(Calendar.MONTH)
+        val dayGet = calendar.get(Calendar.DAY_OF_MONTH)
 
-        return DatePickerDialog(activity, this, yearget, monthget, dayget)
+        return DatePickerDialog(activity, this, yearGet, monthGet, dayGet)
     }
 
     override fun onDateSet(view: DatePicker, year: Int, month: Int, day: Int) {

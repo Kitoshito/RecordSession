@@ -91,103 +91,119 @@
         android:layout_height="wrap_content"
         android:background="#A1A9BA"
         android:layout_marginTop="15dp"
-        android:text="@string/label_pl_name1" />
+        android:text="@string/label_pl_name1"
+        android:visibility="gone"/>
     <EditText
         android:id="@+id/et_pl_code1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#ffffff"
-        android:inputType="text"/>
+        android:inputType="text"
+        android:visibility="gone"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="#A1A9BA"
         android:layout_marginTop="15dp"
-        android:text="@string/label_pl_name2" />
+        android:text="@string/label_pl_name2"
+        android:visibility="gone"/>
     <EditText
         android:id="@+id/et_pl_code2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#ffffff"
-        android:inputType="text"/>
+        android:inputType="text"
+        android:visibility="gone"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="#A1A9BA"
         android:layout_marginTop="15dp"
-        android:text="@string/label_pl_name3" />
+        android:text="@string/label_pl_name3"
+        android:visibility="gone"/>
     <EditText
         android:id="@+id/et_pl_code3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#ffffff"
-        android:inputType="text"/>
+        android:inputType="text"
+        android:visibility="gone"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="#A1A9BA"
         android:layout_marginTop="15dp"
-        android:text="@string/label_pl_name4" />
+        android:text="@string/label_pl_name4"
+        android:visibility="gone"/>
     <EditText
         android:id="@+id/et_pl_code4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#ffffff"
-        android:inputType="text"/>
+        android:inputType="text"
+        android:visibility="gone"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="#A1A9BA"
         android:layout_marginTop="15dp"
-        android:text="@string/label_pl_name5" />
+        android:text="@string/label_pl_name5"
+        android:visibility="gone"/>
     <EditText
         android:id="@+id/et_pl_code5"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#ffffff"
-        android:inputType="text"/>
+        android:inputType="text"
+        android:visibility="gone"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="#A1A9BA"
         android:layout_marginTop="15dp"
-        android:text="@string/label_pl_name6" />
+        android:text="@string/label_pl_name6"
+        android:visibility="gone"/>
     <EditText
         android:id="@+id/et_pl_code6"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#ffffff"
-        android:inputType="text"/>
+        android:inputType="text"
+        android:visibility="gone"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="#A1A9BA"
         android:layout_marginTop="15dp"
-        android:text="@string/label_pl_name7" />
+        android:text="@string/label_pl_name7"
+        android:visibility="gone"/>
     <EditText
         android:id="@+id/et_pl_code7"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#ffffff"
-        android:inputType="text"/>
+        android:inputType="text"
+        android:visibility="gone"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="#A1A9BA"
         android:layout_marginTop="15dp"
-        android:text="@string/label_pl_name8" />
+        android:text="@string/label_pl_name8"
+        android:visibility="gone"/>
     <EditText
         android:id="@+id/et_pl_code8"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#ffffff"
-        android:inputType="text"/>
+        android:inputType="text"
+        android:visibility="gone"/>
 
 </LinearLayout>
