@@ -91,17 +91,16 @@
         android:layout_height="wrap_content"
         android:background="#A1A9BA"
         android:layout_marginTop="15dp"
-        android:text="@string/label_pl_name1"
-        android:visibility="gone"/>
+        android:text="@string/label_pl_name1"/>
     <EditText
         android:id="@+id/et_pl_code1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#ffffff"
-        android:inputType="text"
-        android:visibility="gone"/>
+        android:inputType="text"/>
 
     <TextView
+        android:id="@+id/tv_pl_code2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="#A1A9BA"
