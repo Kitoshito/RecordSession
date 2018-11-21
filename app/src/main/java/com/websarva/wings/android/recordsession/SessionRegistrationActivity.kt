@@ -7,6 +7,7 @@ import android.os.Bundle
 import android.support.v4.app.DialogFragment
 import android.text.Editable
 import android.text.TextWatcher
+import android.util.Log
 import android.view.View
 import android.widget.Button
 import android.widget.DatePicker
@@ -54,12 +55,12 @@ class SessionRegistrationActivity : AppCompatActivity(), TextWatcher {
     override fun afterTextChanged(p0: Editable?) {
 
         if(p0 == null) {
-            print("p0")
+            Log.d("","p0")
             return
         }
         val inputStr = p0.toString()
         if(inputStr == null) {
-            print("inputStr")
+            Log.d("","inputStr")
             return
         }
         val inputLength = inputStr.length
@@ -70,10 +71,8 @@ class SessionRegistrationActivity : AppCompatActivity(), TextWatcher {
     }
 
     override fun beforeTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
     }
     override fun onTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
     }
 }
 
